@@ -1,0 +1,71 @@
+history file
+
+unset PATH
+
+cd ohne argumente
+cd ~
+
+
+c3a9c5% unset PATH
+c3a9c5% ls
+zsh: command not found: ls
+c3a9c5% /usr/bin/ls
+42-EXAM		 Eval	    minilibx  PISCINE	   todo.txt
+Core_Curriculum  goinfre    ms2001    Screenshots  tokenizing
+Downloads	 minicheck  new       sgoinfre	   Z_Stuff
+
+
+ioctl for heredoc ctrl c
+expansion im heredoc
+
+export with no options
+
+
+
+minishell$ << EOF cat << EOF2
+> asas
+> asasas
+> asas
+> EOF
+tcsetattr: Inappropriate ioctl for device
+
+pbohme@c3a9c5:~$ << EOF cat << EOF2
+> asas
+> asasas
+> asa
+> EOF
+> sdsdsd
+> sdsdsd
+> EOF2 is here
+> EOF2
+sdsdsd
+sdsdsd
+EOF2 is here
+
+cat << EOF | grep "test" >outfile4.txt | cat << EOF3
+
+
+
+
+Open qoutes are not handled.
+minishell$ echo $?
+0
+minishell$ |
+minishell: syntax error near unexpectedtoken '|'
+minishell$ >
+minishell: syntax error nearunexpected token `newline'
+minishell$ > <
+minishell: syntax error near unexpected tokenminishell$ 
+minishell$ >> |
+minishell$ ls
+'|'         Makefile   minishell          outfile4.txt   test1       test2       test3
+ includes   mini       minishell_tester   sources        test1.txt   test2.txt   todo.txt
+
+
+
+ - cd fixen (pia) ---> cd.c !
+ - path for comamnds (wenn unset PATH) (pia) ---> find_path.c
+ - ioctl for heredoc ctrl c (hannah)
+ - error message bei 2 heredocs (tcsetattr: Inappropriate ioctl for device) (hannah)
+ - open und empty pipes (pia)
+ - expansion in heredoc??
